@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #00A4A4;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .store-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .store-name img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .store-name h1 {
+            color: #000;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+
+        .games {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #028EB5;
+        }
+
+        .game {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 100%; 
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .game {
+                width: 23%; 
+            }
+        }
+
+        .game img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .game h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .game p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .ubicacion {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .ubicacion h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00A4A4;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            margin-top: 20px;
+        }
+
+        .contacto {
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .contacto h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00A4A4;
+        }
+
+        .contacto form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contacto form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contacto form input,
+        .contacto form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contacto form button {
+            background-color: #00A4A4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contacto form button:hover {
+            background-color: #028EB5;
+        }
+
+        footer {
+            background-color: #00A4A4;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .rights {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="store-name">
+            <img src="logo1.png" alt="Logo de la tienda">
+            <h1>GAME ZONE</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ubicacion">Ubícanos</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="games">
+        <div class="game">
+            <img src="astrobot.png" alt="AstroBot">
+            <h2>ASTROBOT (PS5)</h2>
+            <p>S/290.00</p>
+        </div>
+        <div class="game">
+            <img src="spiderman.jpg" alt="Marvel Spider-Man">
+            <h2>MARVEL SPIDER-MAN (PS4)</h2>
+            <p>S/150.00</p>
+        </div>
+        <div class="game">
+            <img src="fc25 ps5.jpg" alt="EA FC 25">
+            <h2>EA FC 25 (PS5)</h2>
+            <p>S/250.00</p>
+        </div>
+        <div class="game">
+            <img src="gowr.jpg" alt="GOD OF WAR RAGNAROK">
+            <h2>GOD OF WAR RAGNAROK (PS5)</h2>
+            <p>S/170.00</p>
+        </div>
+        <div class="game">
+            <img src="tlou.webp" alt="The Last of Us part 2 remastered  (ps5)">
+            <h2>The Last of Us remastered (PS5)</h2>
+            <p>S/190.00</p>
+        </div>
+        <div class="game">
+            <img src="spiderman2.jpg".jpg" alt="Spider-Man 2 ">
+            <h2>Marvel Spider-Man 2 (PS5)</h2>
+            <p>S/200.00</p>
+        </div>
+        <div class="game">
+            <img src="mk1.webp" alt="Mortal Kombat 1 ">
+            <h2>Mortal Kombat 1 </h2>
+            <p>S/200.00</p>
+        </div>
+        <div class="game">
+            <img src="db.jpg" alt="Dragon Ball Sparking Zero ">
+            <h2>Dragon Ball Sparking Zero </h2>
+            <p>S/250.00</p>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="ubicacion">
+        <h2>Ubícanos</h2>
+        <div class="map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.9439241007374!2d-76.97382980299106!3d-12.08597096720681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ee4efb8e21%3A0x2509617adc638a91!2sJockey%20Plaza.!5e0!3m2!1ses-419!2spe!4v1742679352160!5m2!1ses-419!2spe"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="rights">
+            <p>&copy; 2025 Game Zone. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
